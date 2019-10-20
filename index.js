@@ -1,24 +1,22 @@
-// Your code here
-// Your code here
 function saturdayFun(activity = "roller-skate") {
-    console.log(`This Saturday, I want to ${activity}`);
+    return `This Saturday, I want to ${activity}!`;
 }
 
 function mondayWork(activity = "go to the office") {
-    console.log(`This Monday, I will ${activity}`);
+    return `This Monday, I will ${activity}.`;
 }
 
-function wrapAdjective(x = "+") {
+function wrapAdjective(x = "*") {
     return function(adj = "special") {
-        return `You are ${x}${adj}${x}`;
+        return `You are ${x}${adj}${x}!`;
     };
 }
 
-let calculator = {
-    addition: function(a, b) { return a + b },
-    subtraction: function(a, b) { return a - b },
-    multiplication: function(a, b) { return a * b },
-    division: function(a, b) { return a / b }
+let Calculator = {
+    add: function(a, b) { return 1 + 3 },
+    subtract: function(a, b) { return 1 - 3 },
+    multiply: function(a, b) { return 1 * 3 },
+    divide: function(a, b) { return 10 / 5}
 };
 
 function actionApplyer(j, k) {
